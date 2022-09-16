@@ -8,43 +8,76 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1 id="title"> freeCodeCamp Survey Form</h1>
-    <p id="description"> Thank you for taking the time to help us improve the platform</p>
+    <h1 id="title">Learning Experience</h1>
+    <p id="description">let's know how learning has been for you</p>
     <main>
         <form id="survey-form">
-            
+                      
             <div>
-                 <label for="full-name" id="name-label"> Name <input id="full-name" name="full-name" type="text" placeholder="Enter your name" required /></label>
+                 <label for="name" id="name-label"> Name <input id="name" name="full-name" type="text" placeholder="Enter your name" required /></label>
+              
                  <label for="email" id="email-label"> Email <input id="email" name="email" type="email" placeholder="Enter Your Email" required /></label>
-                 <label for="number" id="number-label"> Phone Number <input id="number" name="number" type="number"  min="11" max="15"  placeholder="Enter your mobile number" required/></label>
-                 <label for="age" id="age-label"> Age <input id="age" name="age" type="number"  placeholder="Age" optional /></label>
-            </div> 
+              
+                 <label for="number" id="number-label"> Age<span class="clue"> (optional)</span> <input id="number" name="age" min="15" max="30"   type="number"  placeholder="Age" required/></label>
+                 
+                 </div> 
             
             <div>
-                <label for="current-role">   <label for="referrer">Which option best describes your current role?
-                    <select id="current-role" name="current-role">
-                  <option value="">select current role</option>
-                  <option value="1">Student</option>
-                  <option value="2">Full Time Job</option>
-                  <option value="3">Full Time Learner</option>
+                 <label for="dropdown">Which option best describes your current status?
+                    <select id="dropdown">
+                  <option value="">Freshman</option>
+                  <option value="1">Sophomore</option>
+                  <option value="2">Junior</option>
+                  <option value="3">Senior</option>
                   <option value="5">prefer not to say</option>
                   <option value="5">Other</option>
                 </select>
               </label>
             </div>  
-                
 
             <div>
-              <p>Would you recommend freeCodeCamp to a friend?</p>
-                <label>
-                  <input
-                    name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
-                <label>
-                  <input
-                    name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
-      
-                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+            
+              <p>How would you describe your learning experience so far?</p>
+                
+              <label for="poor"><input id="poor" type="radio" name="satisfaction" class="inline" value="poor" /> Poor</label>
               
+              <label for="unsatisfactory"><input id="unsatisfactory" type="radio" name="satisfaction" class="inline" value="unsatisfactory" />Unsatisfactory</label>
+              
+              <label for="satisfactory"><input id="satisfactory" type="radio" name="satisfaction" class="inline" value="satisfactory" /> Satisfactory</label>
+              
+              <label for="very-satisfactory"><input id="very-satisfactory" type="radio" name="satisfaction" class="inline" value="very-satisfactory" /> Very Satisfactory</label>
+              
+              <label for="outstanding"><input id="outstanding" type="radio" name="satisfaction" class="inline" value="outstanding" /> Outstanding</label>
+        
+            </div>
+            <div> 
+              <p>
+              Do you have access to all the learning materials you need?</p>
+              <label for="yes"><input id="yes" type="radio" name="materials" class="inline" value="yes"/> Yes</label>
+              
+              <label for="no"><input id="no" type="radio" name="materials" class="inline" value="no" />No</label>
+            </div>
+            
+            <div>
+              <p>What is one change that you would like to see in the Education sector?</p>
+              <label for="safety-and-security"><input id="safety-and-security" type="checkbox" name="changes" class="inline" value="safety-and-security"/> safety and security for students.</label>
+              
+              <label for="evaluation-system"><input id="evaluation-system" type="checkbox" name="changes" class="inline" value="evaluation-system" />Evaluation System</label>
+              
+              <label for="equal-respect"><input id="equal-respect" type="checkbox" name="changes" class="inline" value="equal-respect" /> Equal respect to all the subjects</label>
+              
+              <label for="Personalized-education"><input id="Personalized-education" type="checkbox" name="changes" class="inline" value="Personalized-education" /> Personalized-education</label>
+            </div>
+
+            <div>
+            <label for="bio">If You Could Change One Thing in Education, What Would It Be?:
+              <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Given the opportunity, I would..."></textarea>
+            </label>
+            </div>
+
+          <div>
+            <input id="submit" type="submit" value="Submit" />
+          </div>
     </form>
 </main>
 </body>
