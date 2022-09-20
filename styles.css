@@ -9,7 +9,12 @@ body{
 form{
     margin: auto;
     Width: 80vw;
-    height: 90vh;
-    background-color: 
-    color: 
+    height: 80vh;
+    background-color: #11111D;
+    border-box: 2px solid black;
 }
+header{
+     Margin: 5vh auto;
+     text-align:center;
+     }
+     
