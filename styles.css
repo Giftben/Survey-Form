@@ -1,9 +1,11 @@
 body{
-    margin:0px;
+    margin:0;
     width: 100vw;
     height: 100vh;
     background-color: #10111D;
-    color: #f0fff3;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
 }
 
 form{
