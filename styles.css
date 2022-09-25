@@ -13,17 +13,18 @@ form{
     Width: 80vw;
     height: 80vh;
     background-color: #11111D;
-    border-box: 2px solid black;
+    border-box: 2px inset black;
+    max-width: 700px;
+    min-width: 300px;
+    padding-bottom: 2em;
 }
+
+
 header{
      Margin: 5vh auto;
      text-align:center;
      }
      
-#survey-form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 0 auto;
-  padding-bottom: 2em;
-}
+header .title{
+     
+      Fon
