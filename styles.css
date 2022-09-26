@@ -28,8 +28,8 @@ header{
 .inline{
 
      width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
+     margin: 0 0.5em 0 0;
+    vertical-align: middle;
     }
 
 
@@ -42,4 +42,11 @@ input[type="submit"] {
   background-color: #9a6aff;
   border-color: white;
   min-width: 300px;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
 }
