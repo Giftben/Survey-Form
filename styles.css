@@ -54,5 +54,5 @@ input[type="submit"] {
   margin: 0.5rem 0;
   }
    div{
-    border: 1px solid #0a0a23;
+    border: 1px inset #0a0a23;
   }
